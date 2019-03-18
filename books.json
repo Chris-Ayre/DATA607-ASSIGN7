@@ -1,0 +1,20 @@
+{books :[
+	{
+	"ISBN" : 0062748203,
+	"Title" : Barracoon,
+	"Author" : "Zora Neale Hurston",
+	"Publisher" : Amistad
+	},
+	{
+	"ISBN" : 1501135945,
+	"Title" : Indianopolis,
+	"Author" : ["Lynn Vincent", "Sara Vladic"],
+	"Publisher" : "Simon & Schuster"
+	},
+	{
+	"ISBN" : 1101871849,
+	"Title" : "Our Towns",
+	"Author" : ["James Fallows", "Deborah Fallows"],
+	"Publisher" : Amistad
+	}]
+}

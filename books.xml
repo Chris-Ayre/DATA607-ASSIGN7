@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+
+  <book category="history">
+    	<title lang="en">Barracoon</title>
+    	<author>Zora Neale Hurston</author>
+    	<publisher>Amistad</publisher>
+    	<ISBN>0062748203</ISBN>
+  </book>
+
+    	<book category="history">
+    	<title lang="en">Indianopolis</title>
+    	<author>Lynn Vincent</author>
+	<author2>Sara Vladic</author2>
+    	<publisher>Simon & Schuster</publisher>
+    	<ISBN>1501135945</ISBN>
+  </book>
+
+  <book category="history">
+   	<title lang="en">Our Towns</title>
+    	<author>James Fallows</author>
+	<author2>Deborah Fallows</author2>
+    	<publisher>Amistad</publisher>
+    	<ISBN>1101871849</ISBN>
+  </book>
+
+</books>
