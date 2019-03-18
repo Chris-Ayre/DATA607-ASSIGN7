@@ -1,0 +1,47 @@
+---
+title: "607 Week 7 Assignment"
+author: "Chris Ayre"
+date: "3/15/2019"
+output: html_document
+---
+
+```{r}
+library(XML)
+library(RCurl)
+library(jsonlite)
+```
+
+
+## Parsing HTML
+
+```{r}
+books_html_url <- 
+  getURL("https://raw.githubusercontent.com/Chris-Ayre/DATA607-ASSIGN7/master/books.html")
+
+books_html <- readHTMLTable(books_html_url, header = TRUE)
+books_html
+```
+
+
+## Parsing XML
+
+```{r}
+books_xml_url <- 
+  getURL("https://raw.githubusercontent.com/Chris-Ayre/DATA607-ASSIGN7/master/books.xml")
+
+books_xml1 <- xmlParse(books_xml_url, ignoreBlanks=TRUE)
+books_xml <- xmlToDataFrame(books_xml1)
+books_xml
+```
+
+## Parsing JSON
+
+```{r}
+books_json_URL <- 
+  getURL("https://raw.githubusercontent.com/Chris-Ayre/DATA607-ASSIGN7/master/books.json")
+books_json <- fromJSON(books_json_URL)
+books_json
+```
+
+
+# THE DATA FRAMES ARE NOT IDENTICAL - EACH PROTOCOL HAS DIFFERENT DEFAULTS THAT ORDER THE COLUMNS DIFFERENTLY
